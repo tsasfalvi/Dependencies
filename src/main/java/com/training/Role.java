@@ -1,7 +1,7 @@
-package com.epam.training;
+package com.training;
 
 public enum Role {
-	
+
 	ADMIN(true, 10), USER(true, 8), TRAINER(true, 9), PARTICIPANT(false, 2, false), DEVELOPER(true, 5), ASSISTANT(false, 4);
 
 	private boolean elevated;
@@ -9,7 +9,7 @@ public enum Role {
 	private boolean enabled;
 
 	private int accessLevel;
-	
+
 	private Role(boolean elevated, int accessLevel) {
 		this.elevated = elevated;
 		this.enabled = true;

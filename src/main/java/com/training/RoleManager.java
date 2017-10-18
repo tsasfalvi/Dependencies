@@ -1,4 +1,4 @@
-package com.epam.training;
+package com.training;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,7 +14,7 @@ public class RoleManager {
 		}
 		return roles;
 	}
-	
+
 	public Set<Role> getRolesAboveAccessLevel(int accessLevel) {
 		Set<Role> roles = new HashSet<Role>();
 		for (Role currentRole : Role.values()) {
@@ -26,7 +26,7 @@ public class RoleManager {
 		}
 		return roles;
 	}
-	
+
 	public Set<Role> getRolesBelowAccessLevel(int accessLevel) {
 		Set<Role> roles = new HashSet<Role>();
 		for (Role currentRole : Role.values()) {
@@ -36,7 +36,7 @@ public class RoleManager {
 		}
 		return roles;
 	}
-	
+
 	public Set<Role> getElevatedRolesOnAccessLevel(int accessLevel) {
 		Set<Role> roles = new HashSet<Role>();
 		for (Role currentRole : Role.values()) {
@@ -46,6 +46,6 @@ public class RoleManager {
 		}
 		return roles;
 	}
-	
-	
+
+
 }
